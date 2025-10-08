@@ -363,7 +363,7 @@ export const RoomsSection = () => {
               </div>
             </div>
             <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-200">
-              <div className="text-3xl font-bold text-gray-700 mb-2">60+</div>
+              <div className="text-3xl font-bold text-gray-700 mb-2">50+</div>
               <div className="text-gray-600 font-medium">
                 Pessoas Capacidade Total
               </div>
