@@ -32,7 +32,7 @@ export const LocationSection = () => {
         {/* Google Maps Section - Full Width */}
         <div className="bg-white rounded-lg overflow-hidden shadow-2xl">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3742.1234567890!2d-40.4981!3d-20.6681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sPousada%20Dora%20Mar!5e0!3m2!1spt-BR!2sbr!4v1234567890123!5m2!1spt-BR!2sbr"
+            src="https://maps.google.com/maps?q=R.+Carangola,+292,+Praia+do+Morro,+Guarapari+-+ES,+29216-150&t=&z=15&ie=UTF8&iwloc=&output=embed"
             width="100%"
             height="450"
             style={{ border: 0 }}
