@@ -8,7 +8,7 @@ export const RoomsSection = () => {
   const rooms = [
     {
       id: 1,
-      name: "Suíte 01",
+      name: "Quarto 01",
       capacity: "11 pessoas",
       description: "5 beliches + 1 cama de solteiro",
       features: ["Com suíte", "Banheiro privativo"],
@@ -17,7 +17,7 @@ export const RoomsSection = () => {
     },
     {
       id: 2,
-      name: "Quarto 03",
+      name: "Quarto 02",
       capacity: "8 pessoas",
       description: "4 beliches",
       features: ["Sem suíte"],
@@ -26,7 +26,7 @@ export const RoomsSection = () => {
     },
     {
       id: 3,
-      name: "Suíte 02",
+      name: "Quarto 03",
       capacity: "6 pessoas",
       description: "1 cama de casal + 2 beliches",
       features: ["Com suíte", "Banheiro privativo"],
@@ -89,8 +89,19 @@ export const RoomsSection = () => {
     },
   ];
 
-  const handleRoomInquiry = (roomName) => {
-    const message = `Olá! Gostaria de consultar a disponibilidade do ${roomName} na Pousada Dora Mar. Podem me ajudar?`;
+  const handleRoomInquiry = (room) => {
+    const message = `Olá! Gostaria de consultar a disponibilidade do ${
+      room.name
+    } na Pousada Dora Mar.
+
+*Informações do Quarto:*
+• *Nome:* ${room.name}
+• *Capacidade:* ${room.capacity}
+• *Localização:* ${room.floor}
+• *Configuração:* ${room.bedDetails}
+• *Características:* ${room.features.join(", ")}
+
+Podem me ajudar?`;
     const whatsappUrl = `https://wa.me/5527988670914?text=${encodeURIComponent(
       message
     )}`;
@@ -240,7 +251,7 @@ export const RoomsSection = () => {
                       </div>
 
                       <Button
-                        onClick={() => handleRoomInquiry(room.name)}
+                        onClick={() => handleRoomInquiry(room)}
                         className="w-full bg-sky-600 hover:bg-sky-700 text-white transition-all transform hover:scale-105 shadow-lg hover:shadow-sky-200"
                       >
                         <MessageCircle className="w-4 h-4 mr-2" />
@@ -319,7 +330,7 @@ export const RoomsSection = () => {
                       </div>
 
                       <Button
-                        onClick={() => handleRoomInquiry(room.name)}
+                        onClick={() => handleRoomInquiry(room)}
                         className="w-full bg-emerald-600 hover:bg-emerald-700 text-white transition-all transform hover:scale-105 shadow-lg hover:shadow-emerald-200"
                       >
                         <MessageCircle className="w-4 h-4 mr-2" />
