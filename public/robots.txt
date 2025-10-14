@@ -1,0 +1,31 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://pousadadoramar.vercel.app/sitemap.xml
+
+# Permitir rastreamento de imagens
+User-agent: Googlebot-Image
+Allow: /images/
+
+# Permitir rastreamento completo para principais bots
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Otimizações específicas
+Crawl-delay: 1
+
+# Permitir acesso a recursos importantes
+Allow: /images/
+Allow: /static/
+Allow: /*.css
+Allow: /*.js
+
+# Bloquear arquivos desnecessários
+Disallow: /node_modules/
+Disallow: /*.json$
+Disallow: /package.json
+Disallow: /yarn.lock
